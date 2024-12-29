@@ -62,7 +62,7 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 
 ## 4. Kết quả
 **Video kiểm tra hệ thống ở chế độ tự động:**
-[Link Video](videos/kiem_tra_huong_theo_nguon_sangsang.mp4)
+[Link Video](videos/kiem_tra_huong_theo_nguon_sang.mp4)
 
 **Video kiểm tra hệ thống ở chế độ thủ công:**
 [Link Video](videos/manual.mp4)

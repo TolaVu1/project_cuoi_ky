@@ -1,0 +1,692 @@
+[
+    {
+        "id": "2ec32ea467ceae3f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cf861e008453e3a5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0b0471",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#555dd3",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#555dd3",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4060dd",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#9297e3",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#555dd3",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e94efd3a76f9d311",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "aa02f20a5d494f24a63fadff434be34b.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "5d1f2e30392ccfb2",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "92cbd79cded98731",
+        "type": "ui_tab",
+        "name": "Control Panel",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7160a25f9b99e990",
+        "type": "ui_group",
+        "name": "Hiển thị",
+        "tab": "92cbd79cded98731",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "287ca65e569153a3",
+        "type": "ui_group",
+        "name": "Điều khiển Solar Tracker",
+        "tab": "92cbd79cded98731",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d1f2e30392ccfb2",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "ca_cert_hivemq.h",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "a005f0d9d9727a2f",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 1,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "3bd3e55f746ed1f1",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "c96e66af594d5b36",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "e5e7196dc9bb172f",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "28c3f4f5a14fc5ad",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "f81d6d6b3e36d079",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "c8eb22d8ce7aa42a",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "83071c2ce169d2b2",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "7acb9f9cac6d3434",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "ef38d5f7e0cf3cef",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 15,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "ef077603939eda38",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2b8da654601e0bda",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7394c8ec7228b518",
+        "type": "mqtt in",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "topic": "solar/light",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e94efd3a76f9d311",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "d1890cac81755121",
+                "b7d814bd1b42e27b"
+            ]
+        ]
+    },
+    {
+        "id": "d3a4827e199c0a2c",
+        "type": "mqtt out",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "topic": "solar/control",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e94efd3a76f9d311",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b7d814bd1b42e27b",
+        "type": "ui_text",
+        "z": "2ec32ea467ceae3f",
+        "group": "7160a25f9b99e990",
+        "order": 1,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "30",
+        "color": "#ffffff",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "764bea156e301b43",
+        "type": "ui_switch",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "287ca65e569153a3",
+        "order": 8,
+        "width": 2,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "AUTO_OFF",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "AUTO_ON",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "ef3df4df43136d7c",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "UP",
+        "group": "287ca65e569153a3",
+        "order": 2,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "UP",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_VERTICAL:UP",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "e89430323f2dede7",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "LEFT",
+        "group": "287ca65e569153a3",
+        "order": 7,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "LEFT",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_HORIZONTAL:DOWN",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "3a117219074c1236",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "DOWN",
+        "group": "287ca65e569153a3",
+        "order": 14,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "DOWN",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_VERTICAL:DOWN",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "172953692a92ee64",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "RIGHT",
+        "group": "287ca65e569153a3",
+        "order": 9,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "RIGHT",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_HORIZONTAL:UP",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 340,
+        "y": 560,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "d1890cac81755121",
+        "type": "debug",
+        "z": "2ec32ea467ceae3f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "529311df0a649151",
+        "type": "mqtt in",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "topic": "solar/servo/angles",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "e94efd3a76f9d311",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "2ebec84ae8a4d94d",
+                "11b70fb120b614c8"
+            ]
+        ]
+    },
+    {
+        "id": "1eca639e66844a2f",
+        "type": "ui_gauge",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "group": "7160a25f9b99e990",
+        "order": 4,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Horizontal Angle",
+        "label": "units",
+        "format": "{{value}}°",
+        "min": 0,
+        "max": "180",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 820,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e8d80c4f24bca983",
+        "type": "ui_gauge",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "group": "7160a25f9b99e990",
+        "order": 5,
+        "width": 6,
+        "height": 4,
+        "gtype": "gage",
+        "title": "Vertical Angle",
+        "label": "units",
+        "format": "{{value}}°",
+        "min": "30",
+        "max": "150",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 820,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "2ebec84ae8a4d94d",
+        "type": "debug",
+        "z": "2ec32ea467ceae3f",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "65bffdc8ff60b01c",
+        "type": "ui_text",
+        "z": "2ec32ea467ceae3f",
+        "group": "7160a25f9b99e990",
+        "order": 2,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "Horizontal Angle",
+        "format": "{{value}}°",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 820,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "d87173a6deacd626",
+        "type": "ui_text",
+        "z": "2ec32ea467ceae3f",
+        "group": "7160a25f9b99e990",
+        "order": 3,
+        "width": 4,
+        "height": 2,
+        "name": "",
+        "label": "Vertical Angle",
+        "format": "{{value}}°",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "11b70fb120b614c8",
+        "type": "function",
+        "z": "2ec32ea467ceae3f",
+        "name": "function 1",
+        "func": "// Lấy dữ liệu từ msg.payload\nlet data = msg.payload;\n\n// Sử dụng match để tách giá trị góc Horizontal và Vertical\nlet horizontalMatch = data.match(/Horizontal Angle: (\\d+)/);\nlet verticalMatch = data.match(/Vertical Angle: (\\d+)/);\n\n// Kiểm tra nếu không tìm thấy giá trị\nif (!horizontalMatch || !verticalMatch) {\n    node.error(\"Dữ liệu không đúng định dạng: \" + data, msg);\n    return null;  // Kết thúc nếu dữ liệu không hợp lệ\n}\n\n// Tách giá trị góc từ chuỗi\nlet horizontal = parseInt(horizontalMatch[1]); // Góc Horizontal\nlet vertical = parseInt(verticalMatch[1]);     // Góc Vertical\n\n// Tạo hai message payloads cho hai đầu ra\nreturn [\n    { payload: horizontal },  // Đầu ra 1: Giá trị góc Horizontal\n    { payload: vertical }     // Đầu ra 2: Giá trị góc Vertical\n];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 200,
+        "wires": [
+            [
+                "1eca639e66844a2f",
+                "65bffdc8ff60b01c"
+            ],
+            [
+                "d87173a6deacd626",
+                "e8d80c4f24bca983"
+            ]
+        ]
+    }
+]
